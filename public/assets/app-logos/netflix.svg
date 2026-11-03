@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 38" fill="none">
+  <!-- Official Netflix Bold Curved Red Wordmark -->
+  <g fill="#E50914" transform="translate(6, 2)">
+    <!-- N -->
+    <path d="M2 32V3h6.5l11.5 22.5V3h5.8V32H19L7.8 9.5V32H2z"/>
+    <!-- E -->
+    <path d="M33 3h18.5v5.5H39v6.8h11.2v5.5H39v7.7h13v5.5H33V3z"/>
+    <!-- T -->
+    <path d="M57 3h19v5.5h-6.6V32h-5.8V8.5H57V3z"/>
+    <!-- F -->
+    <path d="M81 3h17.5v5.5H86.8v7h10.8v5.5H86.8V32H81V3z"/>
+    <!-- L -->
+    <path d="M103 3h5.8v23.5h12.5V32H103V3z"/>
+    <!-- I -->
+    <path d="M126 3h5.8V32h-5.8V3z"/>
+    <!-- X -->
+    <path d="M136 3h6.6l5.2 10.8 5.2-10.8h6.8l-8.6 16.5 9 16.5h-7l-5.4-11.2-5.4 11.2h-7l9-16.5L136 3z"/>
+  </g>
+</svg>

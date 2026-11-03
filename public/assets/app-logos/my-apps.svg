@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 42" fill="none">
+  <!-- Android TV "All Apps" Grid Icon Badge -->
+  <g transform="translate(6, 4)">
+    <circle cx="17" cy="17" r="17" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5"/>
+    <!-- 3x3 Rounded Grid of Apps with Google TV / Warm Gold Colors -->
+    <!-- Row 1 -->
+    <rect x="8.5" y="8.5" width="4.5" height="4.5" rx="1.2" fill="#4285F4"/>
+    <rect x="14.8" y="8.5" width="4.5" height="4.5" rx="1.2" fill="#EA4335"/>
+    <rect x="21" y="8.5" width="4.5" height="4.5" rx="1.2" fill="#FBBC05"/>
+    <!-- Row 2 -->
+    <rect x="8.5" y="14.8" width="4.5" height="4.5" rx="1.2" fill="#34A853"/>
+    <rect x="14.8" y="14.8" width="4.5" height="4.5" rx="1.2" fill="#F59E0B"/>
+    <rect x="21" y="14.8" width="4.5" height="4.5" rx="1.2" fill="#4285F4"/>
+    <!-- Row 3 -->
+    <rect x="8.5" y="21" width="4.5" height="4.5" rx="1.2" fill="#FBBC05"/>
+    <rect x="14.8" y="21" width="4.5" height="4.5" rx="1.2" fill="#34A853"/>
+    <rect x="21" y="21" width="4.5" height="4.5" rx="1.2" fill="#EA4335"/>
+  </g>
+  <!-- Wordmark in White -->
+  <g fill="#FFFFFF" transform="translate(54, 12)">
+    <text x="0" y="16" fill="#FFFFFF" font-family="'Google Sans', Roboto, Arial, sans-serif" font-weight="700" font-size="18" letter-spacing="-0.2">My Apps</text>
+  </g>
+</svg>
+

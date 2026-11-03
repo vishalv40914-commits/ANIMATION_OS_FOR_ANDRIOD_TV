@@ -1,0 +1,148 @@
+{
+  "frameRate": 24,
+  "frameStepSeconds": 0.041666666666666664,
+  "totalDuration": 10.0,
+  "totalFrames": 240,
+  "touchHitWindow": 0.04,
+  "forward": {
+    "restStates": [
+      {
+        "id": "S0",
+        "index": 0,
+        "name": "HOLD S0",
+        "restFrame": 33,
+        "restTime": 1.375,
+        "touchId": "TOUCH_A"
+      },
+      {
+        "id": "S1",
+        "index": 1,
+        "name": "HOLD S1",
+        "restFrame": 65,
+        "restTime": 2.708333,
+        "touchId": null
+      },
+      {
+        "id": "S2",
+        "index": 2,
+        "name": "HOLD S2",
+        "restFrame": 109,
+        "restTime": 4.541667,
+        "touchId": "TOUCH_B"
+      },
+      {
+        "id": "S3",
+        "index": 3,
+        "name": "HOLD S3",
+        "restFrame": 157,
+        "restTime": 6.541667,
+        "touchId": null
+      }
+    ],
+    "stepTransitions": [
+      {
+        "id": "STEP_1",
+        "fromIndex": 0,
+        "toIndex": 1,
+        "startFrame": 46,
+        "endFrame": 65,
+        "startTime": 1.917,
+        "endTime": 2.708
+      },
+      {
+        "id": "STEP_2",
+        "fromIndex": 1,
+        "toIndex": 2,
+        "startFrame": 93,
+        "endFrame": 109,
+        "startTime": 3.875,
+        "endTime": 4.542
+      },
+      {
+        "id": "STEP_3",
+        "fromIndex": 2,
+        "toIndex": 3,
+        "startFrame": 141,
+        "endFrame": 157,
+        "startTime": 5.875,
+        "endTime": 6.542
+      }
+    ],
+    "touchClips": {
+      "TOUCH_A": {
+        "id": "TOUCH_A",
+        "targetState": "S0",
+        "startFrame": 34,
+        "endFrame": 42,
+        "hitFrame": 34,
+        "hitTime": 1.417,
+        "startTime": 1.417,
+        "endTime": 1.750,
+        "returnRestFrame": 33
+      },
+      "TOUCH_B": {
+        "id": "TOUCH_B",
+        "targetState": "S2",
+        "startFrame": 117,
+        "endFrame": 131,
+        "hitFrame": 117,
+        "hitTime": 4.875,
+        "startTime": 4.875,
+        "endTime": 5.458,
+        "returnRestFrame": 109
+      }
+    }
+  },
+  "backward": {
+    "restStates": [
+      {
+        "id": "BW_S0",
+        "index": 0,
+        "restTime": 1.150
+      },
+      {
+        "id": "BW_S1",
+        "index": 1,
+        "restTime": 4.200
+      },
+      {
+        "id": "BW_S2",
+        "index": 2,
+        "restTime": 6.200
+      },
+      {
+        "id": "BW_S3",
+        "index": 3,
+        "restTime": 6.200
+      }
+    ],
+    "stepTransitions": [
+      {
+        "id": "BW_STEP_1",
+        "fromIndex": 1,
+        "toIndex": 0,
+        "startTime": 0.450,
+        "endTime": 1.150
+      },
+      {
+        "id": "BW_STEP_2",
+        "fromIndex": 2,
+        "toIndex": 1,
+        "startTime": 3.400,
+        "endTime": 4.200
+      },
+      {
+        "id": "BW_STEP_3",
+        "fromIndex": 3,
+        "toIndex": 2,
+        "startTime": 5.400,
+        "endTime": 6.200
+      }
+    ]
+  },
+  "futureClips": {
+    "intro": "intro.mp4",
+    "ending": "ending.mp4",
+    "notes": "future, not required"
+  }
+}

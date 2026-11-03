@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production Build Output
+dist/
+dist-ssr/
+*.local
+
+# Temporary Scratch Files & Test Runs
+scratch/
+scripts/chrome_*
+*.log
+
+# Root Raw Video Uploads (Actual active assets are in public/video/)
+/*.mp4
+/*.jpg
+/*.png
+!index.html
+
+# Unused / Intermediate video encodes in public/video (saves ~92 MB on git repo size)
+public/video/main_intra_rev.mp4
+public/video/backward_smooth.mp4
+public/video/backward_intra.mp4
+
+# Editor & OS Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment Variables
+.env
+.env.production
+.env.development
+.env.local

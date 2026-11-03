@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cyan-glow: #00e5ff;
+  --gold-glow: #ffd700;
+  --bg-dark: #05070b;
+  --app-transition-duration: 160ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  color: #f1f5f9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* TV Safe Margin Container (5% overscan margins) */
+.tv-safe-container {
+  width: 100%;
+  height: 100%;
+  padding: 3.5vh 4.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+/* Edge bump animation when hitting boundary (clamped) */
+@keyframes bumpLeft {
+  0% { transform: translateX(0); }
+  35% { transform: translateX(-16px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bumpRight {
+  0% { transform: translateX(0); }
+  35% { transform: translateX(16px); }
+  100% { transform: translateX(0); }
+}
+
+.bump-left {
+  animation: bumpLeft 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.bump-right {
+  animation: bumpRight 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Focused Hologram Card Glow */
+.focused-card-glow {
+  border-color: rgba(0, 229, 255, 0.95);
+  box-shadow: 
+    0 0 25px rgba(0, 229, 255, 0.45),
+    0 0 50px rgba(0, 229, 255, 0.25),
+    inset 0 0 20px rgba(0, 229, 255, 0.3),
+    0 0 0 2px rgba(255, 215, 0, 0.7);
+  transform: translateY(-8px) scale(1.06);
+}
+
+/* Code-only Cyan Touch Launch Glow (for apps without video hand touch) */
+@keyframes cyanTouchPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+    transform: scale(1.05);
+  }
+  50% {
+    box-shadow: 
+      0 0 60px rgba(0, 229, 255, 0.95),
+      0 0 100px rgba(0, 229, 255, 0.8),
+      inset 0 0 35px rgba(0, 229, 255, 0.9);
+    border-color: #ffffff;
+    background-color: rgba(0, 229, 255, 0.35);
+    transform: scale(1.12);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+    transform: scale(1.06);
+  }
+}
+
+.cyan-touch-active {
+  animation: cyanTouchPulse 450ms cubic-bezier(0.2, 0.9, 0.3, 1) forwards;
+}
+
+/* Hologram Scanlines */
+.hologram-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 229, 255, 0.04) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.02),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.02)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
+
+/* Remote control hint pills */
+.key-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e2e8f0;
+  text-transform: uppercase;
+}
+

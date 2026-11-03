@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 42" fill="none">
+  <!-- Twitch Purple Glitch Emblem -->
+  <g transform="translate(8, 4)">
+    <path d="M4 0L0 7v23h8v5h5l5-5h6l10-10V0H4zm26 19l-4 4h-6l-4 4v-4h-5V4h19v15z" fill="#9146FF"/>
+    <rect x="20" y="8" width="3.5" height="7" fill="#FFFFFF"/>
+    <rect x="13" y="8" width="3.5" height="7" fill="#FFFFFF"/>
+  </g>
+  <!-- Twitch Wordmark -->
+  <g fill="#FFFFFF" transform="translate(54, 12)">
+    <text x="0" y="16" fill="#FFFFFF" font-family="'Roobert', Arial, sans-serif" font-weight="900" font-size="20" letter-spacing="-0.5">twitch</text>
+  </g>
+</svg>
+
