@@ -167,3 +167,4 @@ To build optimized static assets:
 npm run build
 ```
 The output will be generated inside the `dist/` directory, ready to be hosted on any web server or packaged into an Android TV WebView / Capacitor container.
+
